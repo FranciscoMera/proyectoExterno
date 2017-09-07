@@ -1,0 +1,211 @@
+	29 de Agosto de 2017
+
+%----------------------%
+%Toma de requerimientos%
+%----------------------%
+
+Orden del día
+Requerimientos Adición Eliminación e Identificación
+
+
+USUARIO
+
+1 Usuario viaje regular:
+	Prioridad:Alta Urgencia: Alta
+	Es modular
+
+2 Crear ruta: Usar rutas ya definidas
+	Prioridad: Intermedia Urgencia: Intermedia
+		Depende del número de solicitudes.
+		Identificar las rutas más utilizadas por los usuarios
+
+3 Reservar asientos:
+	Prioridad:Alta Urgencia:Alta
+	Lo solicita desde una página web o desde el celular
+	Se asigna el asiento una ves es pedido el servicio (Deseable)
+
+4 Cancelar servicio
+	Prioridad:
+	Tiempo definido para la cancelación del servicio con posible cargo
+
+5 Robar o pierde el dispositivo:
+	Prioridad: Media Urgencia: Alta
+	Robar el celular -> Elemento de seguridad para evitar el uso indebido de la aplicación
+
+6 Usuario Consultar historial de viaje:
+	Prioridad:Media Urgencia: Media
+	!!DUDA, le es util al conductor debería ver también su historial de viajes previos?
+
+7 Usurio reporte objetos perdidos
+	Prioridad: Alta Urgencia: Media
+
+8 Usuario comunica o comparte su trayecto:
+	Prioridad: Alta Urgencia: Alta
+
+	DUDA Información en cuestion de transporte para mujeres y hombres
+
+9 Reporta Quejas
+	Prioridad: Alta Urgencia: Alta
+
+10 Accidentes:
+	Prioridad: Urgencia:
+
+	PROCESO DE SEGURO
+
+	RF Avizar a alguien para cuando exista un accidente. Datos de contacto para casos de accidente
+		¿Cómo se identifica?
+
+	¿Usuario puede elegir en donde detenerse durante el trayecto?
+	¿Qué pasa cuando un usuario quiere cancelar su viaje DURANTE el trayecto?
+11 Calificar Conductores:
+
+
+APLICACION CONDUCTOR
+11	
+	Prioridad URGENTISIMO Urgencia URGENTISIMO
+
+	¿Como se asignan vehiculos y rutas?
+
+
+	Ruta se compone de:
+
+	ORIGEN 										DESTINO
+
+			PARADA 		PARADA 			PARADA
+	T1		T2			T3				T4		T5		Tiempos programados
+
+RF	Tomar en cuenta retrasos previstos por tráfico, accidentes etc.
+RF	¿Qué criterio usa el conductor para determinar si hace una parada o no? 
+	Ajustar en función de la demanda y de las condiciones externas-> Memoria histórica 
+
+	Término "BOLETO"
+	Término "HOLGURA"
+	Término "CONDUCTOR PROGRAMADO"
+	Término "CONDUCTOR DE RESERVA" ¿En qué condiciones un conductor programado se vuelve de reserva? Pueden ser ambas? Por cuestiones de calificaciones
+	Término "CONDUCTOR EN DESCANSO"
+	Término "STOCK DE CONDUCTORES"
+	RN El conductor debe tener un tiempo de espera
+		Sugerencia: Cuando esto sucede tomar en cuenta la posición del usuario para poder 
+
+RF	Avisos al usuario cuando se llega temprano o se puede llegar tarde.
+RF 	Historial de nivel de confianza del tiempo y el servicio.
+RF	Rutas por turnos
+RF  Conductores de reserva para cubrir el servicio (Incierto)
+RF 	El conductor puede reportar un ausentismo ¿Porque el conductor no haría esto? 
+	Reportar incidencias para tener un mecanismo de seguridad con respecto al siguiente problema
+RF 	Avisar a los conductores disponibles y que esten en reserva o en descanso que hay una ruta 		que requiere ser atendida
+	PROBLEMA REGULAR: Ausentismo Si no hay conductor para una hora programada causa un conflicto
+
+	Conductores entran cada 15 minutos. Si no es así y no hay conductor el tiempo de salida 
+
+	RNeG Confirmar asistencia a una hora. ¿Quién define esa hora?
+		Estimulos o sanciones en incumplimientos
+
+RF	Los vehiculos con reporte de mantenimiento correctivo y/o muchas fallas no deben ser considerados
+
+!!!!!El conductor debe revisar de puntos básico de mantenimiento
+
+RF	El mantenimiento preventivo de las unidades antes de iniciar viajes
+RF	Revisión de las condiciones de entrega de las unidades al final
+RF 	Generar reportes de mantenimiento correctivo
+		Validación del tiempo
+
+RF	Un conductor no puede tomar viajes si ha inclumplido demasiadas veces.
+
+12 Conductor cancelar el viaje por causas de fuerza mayor
+	Prioridad:		Alta
+
+
+RF Mandar una unidad y estimar el tiempo cuando existe la cancelación de un conductor.
+RF Si existe disponibilidad para usuarios que no reservaron viaje
+		SOBRECARGO siempre y cuando no haya sido accidente
+RF Traspaso de pagos para este tipo de unidades
+
+
+%%%%Viajes anticipados%%%%%%
+
+
+13 Registro de incidenica
+
+	Importancia:Alta Urgencia:Alta
+
+
+14 Consultar Estadísticas
+	DUDA Cuando un conductor tenga malas estadísticas, que lo haría, dentro de la aplicación
+	tomar mas paradas
+
+RF 	Display que reciba señales
+
+
+%%%%%%%%%% Personal
+
+Área de monitoreo
+
+15 	CRUD de Vehiculos
+	Prioridad Alta Urgencia Alta
+
+
+16 	CRUD de Patio de Encierro
+	En función de los recorridos
+
+17 	CRUD de Chóferes
+	Prioridad Alta Urgencia Alta
+
+19 	CRUD Rutas
+	Prioridad Alta Urgencia Alta
+
+20 	Gestión de contraseñas
+
+
+21 	Consulta de operación
+
+22 	Atención a clientes
+
+23 	Consulta del trabajo de chóferes para nómina
+		Indicadores de eficiencia,
+		Manejar sueldo con base en comisiones
+
+24 	Consulta de rendimiento de vehículos
+		Cargas de combustible -> Lugares específicos Existe contrato
+		Kilometraje
+
+25 	Reportes de accidentes o incidencias
+
+26	Consulta de viajes realizados
+		Pasajeros, etc etc 
+	Prioridad Alta Urgencia Alta
+
+27	Historial de clientes
+
+29	Servicios especiales de información para consulta del usuario
+	Prioridad Alta Urgencia Alta
+
+30	Reporte de Ingresos (Pagos efectivos, rechazados , cancelados, de incidencia)
+
+
+RF  Se requiere	una Tarifa diferencial
+		Con reservación
+		Sin reservación
+		Horario
+			Por demanda
+
+RF Ubicar unidades
+RF Revisar historial de rutas de un conductor por día
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IDEA PERSONAL: UNA APLICACION DEL TIEMPO PARA EL METRO
