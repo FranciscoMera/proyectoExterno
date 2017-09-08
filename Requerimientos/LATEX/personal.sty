@@ -105,20 +105,22 @@
 \ChNameVar{\Large\sf\color{subTitleColor}}
 
 
-\newenvironment{Relacion}[1]{%
+\newenvironment{Relacion}[2]{%
 	\section{#1}
+	#2
 	%{\centering}
-	\begin{longtable}[hbtp!]{| p{0.09\textwidth}| p{0.20\textwidth}| p{0.30\textwidth}| p{0.1\textwidth}| p{0.1\textwidth}|}%
+	\begin{longtable}{| p{0.12\textwidth} | p{0.22\textwidth} | p{0.30\textwidth} | p{0.15\textwidth} | p{0.1\textwidth} |}%
 	\hline	%
 	\rowcolor{sectionColor}%
 	\multicolumn{5}{|c|}{\bf\color{white}{#1}}\\%
 	\hline
 	\endhead%
+	\endfoot
 	}{\end{longtable}\makeObservaciones}
 
-\newcommand{\relacionItem}[2]{\cellcolor{sectionColor}\bf \color{white}{#1} & \multicolumn{4}{|l|}{#2} \\\hline}
+\newcommand{\relacionItem}[2]{\cellcolor{sectionColor}\bf \color{white}{#1} & \multicolumn{4}{l|}{{#2}}\\\hline}
 \newcommand{\secReq}{\rowcolor{sectionColor}\multicolumn{5}{|c|}{\bf\color{white}{Requerimientos}}\\\hline \rowcolor{sectionColor} \color{white}Id & \color{white} Nombre & \color{white} Descripción & \color{white}Costo & \color{white}Tiempo estimado\\\hline}
-\newcommand{\reqItem}[5]{ \hypertarget{#1}{#1} & #2 & #3 & #4 & #5 \\\hline}
+\newcommand{\reqItem}[5]{ \hypertarget{#1}{#1} & #2 & #3 & \$#4MXN & #5 \\\hline}
 \newcommand{\refReq}[1]{\hyperlink{#1}{#1}}
 
 %Comando para que el cliente pueda realizar y escribir en el documento las observaciones que crea pertinentes.
@@ -136,6 +138,7 @@
 		& \\
 		& \\
 		\hline
+		\endfoot
 	\end{longtable}}
 %---------------------------------------------------------------------
 

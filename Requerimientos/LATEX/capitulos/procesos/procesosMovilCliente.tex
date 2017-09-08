@@ -1,0 +1,77 @@
+
+
+%Usuarios
+
+
+\begin{Relacion}{Usuarios}{Módulo que se encargará de darle acceso a los usuarios al sistema, así como cono}
+	\relacionItem{Prioridad:}{\Alta}
+	\relacionItem{Urgencia:}{\Alta}
+	%\relacionItem{Descripción:}{Módulo que se encargará de permitirle al usuario seleccionar
+	%su forma de ingresar al sistema} Presenta un error extraño
+	\secReq
+	\reqItem{CU-MC01}{Iniciar sesión con correo electrónico}{}{30,000}{}
+	\reqItem{CU-MC02}{Iniciar sesión con cuenta de Facebook}{}{30,000}{}
+	\reqItem{CU-MC03}{Iniciar sesión con cuenta Google}{}{30,000}{}
+	\reqItem{CU-MC04}{Consultar perfil de usuario}{}{30,000}{}
+	\reqItem{CU-MC05}{Crear una nueva cuenta}{}{30,000}{}
+	\reqItem{CU-MC06}{Cerrar una cuenta}{}{30,000}{}
+	\reqItem{CU-MC06.1}{Borrar la información en el dispositivo móvil}{}{30,000}{}
+	\reqItem{CU-MC07}{Recuperar contraseña}{}{30,000}{}
+	\reqItem{CU-MC08}{Modificar perfil de usuario}{}{30,000}{}
+\end{Relacion}
+
+%Viaje Regular
+
+\begin{Relacion}{Viaje Regular}{}
+	\relacionItem{Prioridad:}{\Alta}
+	\relacionItem{Urgencia:}{\Alta}
+	\secReq
+	\reqItem{CU-MC09}{Consultar rutas disponibles}{}{30,000}{}
+	\reqItem{CU-MC10}{Ver detalle de una ruta}{}{30,000}{}
+	\reqItem{CU-MC11}{Solicitar servicio}{}{30,000}{}
+	\reqItem{CU-MC11.1}{Reservar asiento para un viaje}{}{30,000}{}
+	\reqItem{CU-MC11.2}{Consultar asientos disponibles en un vehículo}{}{30,000}{}
+	\reqItem{CU-MC11.3}{Modificar reserva de un asiento en un vehículo}{}{30,000}{}
+	\reqItem{CU-MC11.4}{Cancelar reserva de un asiento en un vehículo}{}{30,000}{}
+	\reqItem{CU-MC12}{Registrar datos de medio de pago}{}{30,000}{}
+	\reqItem{CU-MC13}{Cancelar el servicio}{}{30,000}{}
+	\reqItem{CU-MC13.1}{Cancelar el servicio sin cobro}{Cuando el cliente requiere cancelar el servicio y aun no ha pasado el tiempo límite establecido no se genararán cargos a sus medios de pago registrados.}{30,000}{}
+	\reqItem{CU-MC13.2}{Cancelar el servicio con cobro}{Cuando el cliente requiere cancelar el servicio y ya ha pasado el tiempo límite establecido se genararán cargos a sus medios de pago registrados por la solicitud del servicio.}{30,000}{}
+	\reqItem{CU-MC14}{Calificar el servicio}{}{30,000}{}
+	\reqItem{CU-MC15}{Pagar con PayPal}{}{30,000}{}
+	\reqItem{CU-MC16}{Pagar con Tarjeta de crédito/débito}{}{30,000}{}
+	\reqItem{CU-MC17}{Consultar viaje solicitado}{}{30,000}{}
+	\reqItem{CU-MC18}{Consultar mensajes de llegada del vehículo}{}{30,000}{}
+\end{Relacion}
+
+%Rutas dinámicas
+\begin{Relacion}{Rutas dinámicas}{}
+	\relacionItem{Prioridad:}{\Baja}
+	\relacionItem{Urgencia:}{\Baja}
+	\secReq
+	\reqItem{CU-MC19}{Solicitar nueva ruta}{}{30,000}{}
+	\reqItem{CU-MC20}{Votar una ruta propuesta}{}{30,000}{}
+	\reqItem{CU-MC21}{Consultar ruta propuesta}{}{30,000}{}
+	\reqItem{CU-MC22}{Modificar ruta propuesta}{}{30,000}{}
+	\reqItem{CU-MC23}{Cancelar ruta propuesta}{}{30,000}{}
+	\reqItem{CU-MC24}{Comentar ruta propuesta}{}{30,000}{}
+	\reqItem{CU-MC25}{Consultar comentarios de ruta propuesta}{}{30,000}{}	
+\end{Relacion}
+
+
+%Red Social
+
+\begin{Relacion}{Red Social}{}
+	\relacionItem{Prioridad:}{\Media}
+	\relacionItem{Urgencia:}{\Media}
+	\secReq
+	\reqItem{CU-MC26}{Ver amigos}{}{30,000}{}
+	\reqItem{CU-MC27}{Buscar amigo}{}{30,000}{}
+	\reqItem{CU-MC28}{Registrar amigo}{}{30,000}{}
+	\reqItem{CU-MC29}{Compartir ruta con amigos}{}{30,000}{}
+	\reqItem{CU-MC30}{Consultar rutas compartidas}{Públicas?}{30,000}{}
+	\reqItem{CU-MC31}{Consultar rutas compartidas con el cliente}{}{30,000}{}
+	\reqItem{CU-MC32}{Notificar incidencia}{}{30,000}{}
+	\reqItem{CU-MC33}{Notificar arribo a destino}{}{30,000}{}
+\end{Relacion}
+

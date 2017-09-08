@@ -1,0 +1,49 @@
+%Viaje
+
+\begin{Relacion}{Viaje}{}
+	\relacionItem{Prioridad:}{\Alta}
+	\relacionItem{Urgencia:}{\Alta}
+	\secReq
+	\reqItem{CU-MV01}{Iniciar sesión en vehículo}{}{30,000}{}
+	\reqItem{CU-MV02}{Consultar asignación de vehículo y de ruta}{}{30,000}{}
+	\reqItem{CU-MV03}{Consultar itinerario}{}{30,000}{}
+	\reqItem{CU-MV04}{Iniciar viaje}{}{30,000}{}
+	\reqItem{CU-MV05}{Consultar paradas}{}{30,000}{}
+	\reqItem{CU-MV06}{Recoger usuario}{}{30,000}{}
+	\reqItem{CU-MV07}{Terminar viaje}{}{30,000}{}
+	\reqItem{CU-MV08}{Solicitar cancelación de viaje}{}{30,000}{}
+	\reqItem{CU-MV08.1}{Registrar cambio de ruta}{Duda!}{30,000}{}
+	\reqItem{CU-MV09}{Abortar viaje}{}{30,000}{}
+	\reqItem{CU-MV10}{Entregar vehículo}{}{30,000}{}
+	\reqItem{CU-MV11}{Enviar notificación de llegada al usuario}{}{30,000}{}
+	\reqItem{CU-MV12}{Cancelar ruta restante}{}{30,000}{}
+	\reqItem{CU-MV13}{Reportar accidente}{}{30,000}{}
+	\reqItem{CU-MV13.1}{Enviar notificación de accidente}{Duda}{30,000}{}
+\end{Relacion}
+
+%Revisión de vehiculo
+\begin{Relacion}{Revisión de vehículo}{}
+	\relacionItem{Prioridad:}{\Alta}
+	\relacionItem{Urgencia:}{\Alta}
+	\secReq
+	\reqItem{CU-MV14}{Reportar condiciones iniciales de unidad}{}{30,000}{}
+	\reqItem{CU-MV15}{Reportar condiciones finales de unidad}{}{30,000}{}
+	\reqItem{CU-MV16}{Solicitar servicio de mantenimiento de unidad}{}{30,000}{}
+\end{Relacion}
+
+% Objetos encontrados
+
+\begin{Relacion}{Objetos encontrados}{}
+	\relacionItem{Prioridad:}{\Alta}
+	\relacionItem{Urgencia:}{\Alta}
+	\secReq
+	\reqItem{CU-MV17}{Reportar objeto encontrado en unidad}{}{30,000}{}
+\end{Relacion}
+
+
+%Historial
+\begin{Relacion}{Historial}{}
+	\relacionItem{Prioridad:}{\Media}
+	\relacionItem{Urgencia:}{\Media}
+	\secReq
+\end{Relacion}
